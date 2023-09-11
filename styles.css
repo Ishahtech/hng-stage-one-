@@ -1,64 +1,38 @@
 #container{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
     background-color: hsla(0, 0%, 94%, 0.904);
     box-sizing: border-box;
-    min-width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 main{
     background-color: #fff;
-    border-radius: 15px;
+     border-radius: 15px;
     padding: 20px 25px;
-    width: 100%; 
+    width: 50%; 
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center ;
     margin: 0 auto;
 }
 
-img{
-    
+img{ 
     width: 200px;
     height: 200px;
     border-radius: 25%;
     margin: 0 auto;
     display: block;
-    object-fit: cover;
-}
-
-p{
-    color: darkgray;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-p:hover{
-    color: rgb(114, 76, 114);
+    object-fit: cover;    
 }
 
 h2{
     color: purple;
     text-align: center;
-}
-
-[data-testid = "slackDisplayName"] {
-    font-size: 32px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-[data-testid = "currentDayOfTheWeek"] {
     font-size: 30px;
-    font-family: cursive;
-}  
+}
 
 [data-testid = "currentUTCTime"] {
     font-size: 22px;
-    font-family: cursive;
-}
-
-[data-testid = "myTrack"] {
-    font-size: 28px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
