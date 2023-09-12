@@ -1,25 +1,18 @@
-function padZero(num) {
-    return num < 10 ? "0" + num : num;
-}
-
 function updateCurrentUTCTime() {
     const currentUTCDate = new Date();
-    const hours = padZero(currentUTCDate.getUTCHours());
-    const minutes = padZero(currentUTCDate.getUTCMinutes());
-    const seconds = padZero(currentUTCDate.getUTCSeconds());
-    const milliseconds = padZero(currentUTCDate.getUTCMilliseconds());
-
+    const currentUTCTimeInMilliseconds = currentUTCDate.getTime();
     const element = document.querySelector('[data-testid="currentUTCTime"]');
     if (element) {
-        element.textContent = ` ${hours}:${minutes}:${seconds}.${milliseconds}`;
+        element.textContent = ` ${currentUTCTimeInMilliseconds}`;
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     updateCurrentUTCTime();
-    setInterval(updateCurrentUTCTime, 1);
+    setInterval(updateCurrentUTCTime, 1000);
 });
+
+
 
 function getCurrentDayOfWeek() {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

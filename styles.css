@@ -27,7 +27,7 @@ img{
     object-fit: cover;    
 }
 
-h2{
+h2, a{
     color: purple;
     font-size: 30px;
 }
