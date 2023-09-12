@@ -11,16 +11,13 @@ function updateCurrentUTCTime() {
 
     const element = document.querySelector('[data-testid="currentUTCTime"]');
     if (element) {
-        element.textContent = ` ${hours}:${minutes}:${seconds}.${milliseconds} UTC`;
+        element.textContent = ` ${hours}:${minutes}:${seconds}.${milliseconds}`;
     }
 }
 
-// Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Call the function to initially display the time
-    updateCurrentUTCTime();
 
-    // Update the time every millisecond (1 millisecond)
+document.addEventListener('DOMContentLoaded', () => {
+    updateCurrentUTCTime();
     setInterval(updateCurrentUTCTime, 1);
 });
 
