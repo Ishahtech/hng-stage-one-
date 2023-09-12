@@ -36,7 +36,7 @@ function displayCurrentDayOfWeek() {
     const currentDayOfWeek = getCurrentDayOfWeek();
     const element = document.querySelector('[data-testid="currentDayOfTheWeek"]');
     if (element) {
-        element.textContent = `Today is ${currentDayOfWeek}`;
+        element.textContent = `${currentDayOfWeek}`;
     }
 }
 

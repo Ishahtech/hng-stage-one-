@@ -1,21 +1,27 @@
+body{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gray;
+    text-align: center;
+}
+
+
 main{
+    max-width: 50%;
     border-radius: 15px;
-    padding: 20px 25px;
-    width: 50%; 
     display: flex;
     flex-direction: column;
     justify-content: center ;
     margin: 0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: hsla(0, 0%, 94%, 0.904);
-    box-sizing: border-box;
-    text-align: center;
+    
 }
-
 img{ 
-    width: 200px;
-    height: 200px;
-    border-radius: 25%;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
     margin: 0 auto;
     display: block;
     object-fit: cover;    
@@ -23,6 +29,5 @@ img{
 
 h2{
     color: purple;
-    text-align: center;
     font-size: 30px;
 }
