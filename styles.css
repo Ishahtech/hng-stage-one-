@@ -9,7 +9,6 @@ body{
 
 
 main{
-    max-width: 50%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
